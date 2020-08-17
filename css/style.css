@@ -4,10 +4,6 @@ body{
     margin: 0px;
 }
 
-/* .container{
-    margin: 0px;
-} */
-
 .menu{
     position: fixed;
     text-align: center;
@@ -50,6 +46,7 @@ header .nav ul li a{
     padding: 5px 10px;
     font-family: bahnschrift;
     font-size: 20px;
+    text-transform: capitalize;
 }
 
 header .nav ul li a:hover{
@@ -112,6 +109,31 @@ header .nav ul li a:hover{
     background-size: cover;
 }
 
-.titseccion{
+#snosotros{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-family: roboto;
+}
 
+#snosotros h1{
+    font-family: roboto;
+    font-weight: bold;
+}
+
+#snosotros img{
+width: 360px;
+padding: 10px;
+}
+
+.nimages{
+    text-align: center;
+}
+
+#companias{
+    margin-top: 90px;
+}
+
+#companias img{
+    margin: 0px;
+    width: 19%;
 }

@@ -1,6 +1,6 @@
 @font-face{
     font-family: bahnschrift;
-    src: url(../fonts/bahnschrift.ttf);
+    src: url(../fonts/bahn/bahnschrift\ ligth.ttf);
 }
 
 @font-face{
@@ -11,4 +11,9 @@
 @font-face{
     font-family: fuentesourcesli;
     src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
