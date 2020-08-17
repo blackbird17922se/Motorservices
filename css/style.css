@@ -1,0 +1,117 @@
+@import url(fonts.css);
+
+body{
+    margin: 0px;
+}
+
+/* .container{
+    margin: 0px;
+} */
+
+.menu{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #161920;
+    padding: 15px 30px 15px 0px;
+    /* opacity: 0.5; */
+}
+
+.logo{
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+header .nav{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .nav ul{
+    float: right;
+    margin-top: 25px;
+    padding: 0px;
+}
+
+header .nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+header .nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-family: bahnschrift;
+    font-size: 20px;
+}
+
+header .nav ul li a:hover{
+    border-radius: 0.5em;
+    color: #ff0000;
+    font-family: bahnschrift;
+}
+
+
+#carouselExampleIndicators{
+    margin-top: 120px;
+    width: 100%;
+}
+
+.carousel-item{
+    height: 500px;    
+}
+
+.textcont{
+    font-family: bahnschrift;
+    color: #ffffff;
+    padding: 170px 50px 100px;
+    margin: 0px;
+}
+
+.textcont p{
+    font-size: 20px; 
+}
+
+.textcont h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+#hero1{
+    /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/header.jpg) center no-repeat;
+
+    /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#hero2{
+    /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero2.JPG) center no-repeat;
+
+    /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero2.JPG) center no-repeat;
+    background-size: cover;
+}
+
+#hero3{
+    /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero3.jpg) center no-repeat;
+
+    /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.titseccion{
+
+}
