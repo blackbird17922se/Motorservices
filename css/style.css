@@ -85,28 +85,28 @@ header .nav ul li a:hover{
 
 #hero1{
     /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
-    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/header.jpg) center no-repeat;
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero/hero1.jpg) center no-repeat;
 
     /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
-    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/header.jpg) center no-repeat;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero/hero1.jpg) center no-repeat;
     background-size: cover;
 }
 
 #hero2{
     /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
-    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero2.JPG) center no-repeat;
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero/hero2.jpg) center no-repeat;
 
     /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
-    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero2.JPG) center no-repeat;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero/hero2.jpg) center no-repeat;
     background-size: cover;
 }
 
 #hero3{
     /* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
-    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero3.jpg) center no-repeat;
+    background: linear-gradient(right, rgba(255,255,255,0), rgb(7, 0, 0)), url(../images/hero/hero3.jpg) center no-repeat;
 
     /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
-    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero3.jpg) center no-repeat;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/hero/hero3.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -145,6 +145,7 @@ padding: 10px;
     width: 100%;
     position: relative;
     font-family: roboto;
+
 }
 
 #headvideos{
@@ -153,11 +154,17 @@ padding: 10px;
     padding: 150px 100px;
     text-align: center;
     color: #ffffff;
+    position: relative;
 }
 
 
 #headvideos h1{
     font-size: 30px;
+    font-weight: bolder;
+}
+
+#headvideos h2{
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -168,19 +175,55 @@ padding: 10px;
 
 #videobox{
     top: -50px;
-    position: absolute;]
+    position: relative;
 }
 
 .video img{
     width: 100%;
 }
 
+.video video{
+    /* width: 100%; */
+
+    width: 355px;
+    height: 266px;
+}
+
 .video h2{
     color: black;
     text-align: justify;
+    font-weight: bolder;
+    margin-top: 20px;
+
 }
 
 .video p{
     color: black;
     text-align: justify;
+    margin-bottom: 50px;
 }
+
+#servicios{
+    position: relative;
+    color: black;
+}
+
+#servicios h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.servicio img{
+    width: 100%;
+    height: 258px;
+}
+
+.servicio h2{
+ padding: 20px 0px 0px;
+ font-size: 20px;
+}
+
+.servicio p{
+ height: 100px;
+   }
