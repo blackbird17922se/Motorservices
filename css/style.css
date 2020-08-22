@@ -206,12 +206,7 @@ padding: 10px;
 #servicios{
     position: relative;
     color: black;
-}
-
-#servicios h1{
-    text-align: center;
-    color: black;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .servicio img{
@@ -226,4 +221,31 @@ padding: 10px;
 
 .servicio p{
  height: 100px;
-   }
+}
+
+.testimonios{
+
+}
+
+.testimonios img{
+    width: 100%;    
+}
+
+.tit1{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.testimonios h4{
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;    
+}
+
+.testimonios h5{
+    
+    font-size: 15px;  
+    color: gray;
+    margin-bottom: 50px; 
+}
