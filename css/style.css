@@ -244,8 +244,53 @@ padding: 10px;
 }
 
 .testimonios h5{
-    
     font-size: 15px;  
     color: gray;
     margin-bottom: 50px; 
+}
+
+footer{
+    text-align: center;
+}
+
+.contacto{
+    text-align: center;
+
+}
+
+#contacto{
+    text-align: center;
+
+}
+
+#contacto h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#formulario .form-row{
+    margin: 15px 50px;
+    text-align: center;
+}
+
+#formulario .form-row div{
+    /* margin: 15px 50px; */
+    padding: 10px 10px;
+}
+
+.bf{
+    text-align: center;
+}
+
+.zero{
+    text-align: center;
+}
+
+.prin{
+    text-align: center;
+}
+
+.sec{
+    text-align: center;
 }
