@@ -1,23 +1,16 @@
 @import url(fonts.css);
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    margin: 0px;
     font-family: roboto;
 }
 
-.menu{
-    position: fixed;
-    text-align: center;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: #161920;
-    padding: 15px 0px 15px 0px;
-    opacity: 0.5;
-}
-
 .logo{
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 
@@ -25,42 +18,128 @@ body{
     width: 100%;
 }
 
-header .nav{
-    justify-content: flex-end;
-    align-items: center;
+header{
+    width: 100%;
 }
 
-header .nav ul{
+.menu{
+    background-color: #161920;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+header nav{
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #161920;
+}
+
+.menu_bar{
+    display: none;
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
     float: right;
-    margin-top: 25px;
-    padding: 0px;
 }
 
-header .nav ul li{
-    display: inline-block;
+header nav ul li{
+    float: left;
     padding: 10px;
 }
 
-header .nav ul li a{
-    text-decoration: none;
+header nav ul li a{
     color: #ffffff;
+    display: block;
+    text-decoration: none;
     padding: 5px 10px;
     font-family: bahnschrift;
     font-size: 20px;
     text-transform: capitalize;
 }
 
-header .nav ul li a:hover{
+header nav ul li a:hover{
     border-radius: 0.5em;
     color: #ff0000;
     font-family: bahnschrift;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px){
+    .logo{
+        display: none;
+    }
+
+    header nav{
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        left: -100%;
+        position: fixed;
+    }
+
+    header nav ul li{
+        padding: 10px;
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    header nav ul li:hover{
+        background-color: #1b1e27;
+    }
+
+    header nav ul li a:hover{
+        color: #ffffff;
+    }
+
+    header nav ul{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background-color: #161920;
+    }
+
+    .menu_bar .bt-menu{     
+        display: block;
+        padding: 20px;
+        background: #161920;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+        color: #ffffff;
+        padding-right: 10px;
+    }
+
+    .logmin{
+        width: 40%;
+        margin: 0;
+        padding-top: 0px;
+    }
 }
 
 #herocontainer{
     position: relative;
     padding: 0px;
     width: 100%;
-    top: 120px;
+    top: 80px;
 }
 
 .carousel-item{
@@ -208,11 +287,6 @@ padding: 10px;
     margin-bottom: 100px;
 }
 
-/* #servicios h1{
-    font-weight: bolder;
-
-} */
-
 .servicio img{
     width: 100%;
     height: 258px;
@@ -230,6 +304,14 @@ padding: 10px;
 
 .testimonios img{
     width: 100%;    
+}
+
+@media screen and (max-width:800px){
+    .testimonios img{
+        width: 30%;
+        margin-bottom: 10px;   
+    }
+
 }
 
 .tit1{
@@ -266,4 +348,55 @@ padding: 10px;
 
 #formulario .form-row div{
     padding: 10px 10px;
+}
+
+#contacto .row{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+footer{
+    background-color: #161920;
+    padding: 50px 50px 20px;
+}
+
+footer h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer p{
+    color: #b0b3c4;
+    font-size: 17px;
+}
+
+.foot ul{
+    padding: 0px;
+}
+
+footer .foot ul li{
+    color: #b0b3c4;
+    font-size: 15px;
+    list-style: none;
+}
+
+.redes ul{
+    padding-left: 0px;
+}
+
+footer .redes ul li{
+    list-style: none;
+    display: inline-block; 
+}
+
+footer .copy{
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+footer .copy p{
+    text-align: right;
+    justify-content: flex-end;
 }

@@ -7,28 +7,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Motorservices</title>
 </head>
 
 <body>
-    <header id="head">
-        <div class="container">
-            <div class="row menu">
-                <div class="col-lg-3 logo">
-                    <img src="images/logomot.png" alt="">
-                </div>
 
-                <div class="col-lg-9 nav">
+    <header id="header">
+        <div class="row menu">
+
+            <!-- para celular -->
+            <div class="menu_bar">
+                <i class="bt-menu">
+                    <span class="fa fa-bars"></span>
+                    <img class="logmin" src="images/logomot.png" alt="">
+                </i>
+            </div>
+
+            <div class="col-lg-3 logo">
+                <img src="images/logomot.png" alt="">
+            </div>
+
+            <div class="col-lg-9">
+                <nav>
                     <ul>
-                        <li><a href="#head">inicio</a></li>
+                        <li><a href="#header">inicio</a></li>
                         <li><a href="#secc">nosotros</a></li>
-                        <li><a href="">videos</a></li>
-                        <li><a href="">servicios</a></li>
-                        <li><a href="">testimonios</a></li>
-                        <li><a href="">registro</a></li>
+                        <li><a href="#videos">videos</a></li>
+                        <li><a href="#serv">servicios</a></li>
+                        <li><a href="#testim">testimonios</a></li>
+                        <li><a href="#preg">pregunta</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </div>
 
@@ -136,8 +145,7 @@
             <div class="container" id="granbox">
                 <div class="row" id="videobox">
                     <div class="col-lg-4 video">
-                        <!-- <img src="images/s1.png" alt=""> -->
-                        <video src="images/video/v1.webm" controls></video>
+                        <video src="video/vid1.mp4" controls></video>
                         <h2>Hic consectetur</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Hic consectetur, tenetur temporibus velit, eligendi doloremque
@@ -147,8 +155,7 @@
                     </div>
 
                     <div class="col-lg-4 video">
-                        <!-- <img src="images/s1.png" alt=""> -->
-                        <video src="images/video/v2.webm" controls></video>
+                        <video src="video/vid2.mp4" controls></video>
                         <h2>Hic consectetur</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Hic consectetur. Reprehenderit
@@ -157,17 +164,17 @@
                     </div>
 
                     <div class="col-lg-4 video">
-                        <!-- <img src="images/s1.png" alt=""> -->
-                        <video src="images/video/v3.webm"  controls></video>
+                        <video src="video/vid3.mp4"  controls></video>
                         <h2>Hic consectetur</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Hic consectetur, tenetur temporibus velit, eligendi doloremque
                             quisquam itaque dolorum cumque, perferendis et. Reprehenderit.
                         </p>
+                        <i id="serv"></i>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>       
 
         <div class="container" id="servicios">
             <div class="row">
@@ -248,8 +255,9 @@
                     </div>
                 </div>
             </div>
+            <i id="testim"></i>
         </div>
-
+        
         <div class="container testimonios">
             <div class="row">
                 <div class="col-lg-12">
@@ -287,9 +295,9 @@
                 
             </div>
         </div>
-    </main>
 
-    <footer>
+        <i id="preg"></i>
+
         <div class="container col-lg-12" id="contacto">
             <div class="row">
                 <div class="col-lg-2"></div>
@@ -324,6 +332,43 @@
                 <div class="col-lg-2"></div>
             </div>
         </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 foot">
+                    <h3>Acerca de esta pagina</h3>
+                    <p>Esta pagina fue elaborada por DsD Desarrollos Dinámicos 
+                    </p>
+                </div>
+
+                <div class="col-lg-5 foot">
+                    <h3>Contacto</h3>
+                    <ul>                 
+                        <li><b>DsD Desarrollos Dinámicos</b></li>
+                        <li><b>Numero de contacto:</b> 304 215 6866</li>
+                        <li><b>Correo electrónico:</b> mauricioalarcon_92@hotmail.com</li>
+                        <li><b>Tenjo, Cundinamarca, Colombia</b></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 redes">
+                    <ul>
+                        <li><a href="https://github.com/blackbird17922se/Night.git"><img src="images/social/gith.png"
+                        alt=""></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12 copy">
+                    <p> &copy; 2020 DsD Desarrollos Dinámicos</p>
+                </div>
+            </div>
+        </div>
+
 
     </footer>
 
@@ -336,6 +381,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/55240dfc55.js" crossorigin="anonymous"></script>
 
 </body>
 
