@@ -9,6 +9,20 @@ body{
     font-family: roboto;
 }
 
+header{
+    width: 100%;
+    position: relative;
+}
+
+#navbar{
+    background-color: #161920;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    padding: 6px 40px;
+}
+
 .logo{
     padding: 10px;
     margin: 0px;
@@ -16,18 +30,6 @@ body{
 
 .logo img{
     width: 100%;
-}
-
-header{
-    width: 100%;
-}
-
-.menu{
-    background-color: #161920;
-    position: fixed;
-    z-index: 99;
-    left: 0;
-    right: 0;
 }
 
 header nav{
@@ -135,7 +137,7 @@ header nav ul li a:hover{
     }
 }
 
-#herocontainer{
+#hero{
     position: relative;
     padding: 0px;
     width: 100%;
@@ -190,29 +192,43 @@ header nav ul li a:hover{
     background-size: cover;
 }
 
-#snosotros{
-    margin-top: 150px;
-    margin-bottom: 150px;
+#nosotros{
+    margin: 150px auto 150px;
+    text-align: center;
+    float: none;
+    width: 100%;
     font-family: roboto;
-    position: relative;
 }
 
-#snosotros h1{
-    font-family: roboto;
+
+.tit1{
+    text-align: center;
+    color: black;
     font-weight: bold;
+    font-family: bahnschrift;
+    /* padding-bottom: 30px; */
 }
 
-#snosotros img{
-width: 360px;
-padding: 10px;
+#nosotros img{
+width: 100%;
+padding: 0px;
+}
+
+.articulos{
+    padding: 0px;
 }
 
 .nimages{
     text-align: center;
+    padding: 10px 0px;
+    width: 100%;
 }
 
 #companias{
-    margin-top: 90px;
+    text-align: center;
+    margin: 90px 0px;
+    width: 100%;
+    float: none;
 }
 
 #companias img{
@@ -225,22 +241,21 @@ padding: 10px;
     width: 100%;
     position: relative;
     font-family: roboto;
-
 }
 
 #headvideos{
     background: linear-gradient(to left, rgba(255,255,255,0), rgba(7, 0, 0)), url(../images/orig_667269.jpg) center no-repeat;
     margin: 0px;
-    padding: 150px 100px;
+    padding: 150px 0px;
     text-align: center;
     color: #ffffff;
     position: relative;
 }
 
-
 #headvideos h1{
     font-size: 30px;
     font-weight: bolder;
+    color: #ffffff;
 }
 
 #headvideos h2{
@@ -248,7 +263,7 @@ padding: 10px;
     font-weight: bolder;
 }
 
-#granbox{
+#contvideos{
     position: relative;
     text-align: center;
 }
@@ -258,13 +273,16 @@ padding: 10px;
     position: relative;
 }
 
+.video{
+    width: 100%;
+}
+
 .video img{
     width: 100%;
 }
 
 .video video{
-    width: 355px;
-    height: 266px;
+    width: 100%;
 }
 
 .video h2{
@@ -272,7 +290,6 @@ padding: 10px;
     text-align: justify;
     font-weight: bolder;
     margin-top: 20px;
-
 }
 
 .video p{
@@ -311,14 +328,6 @@ padding: 10px;
         width: 30%;
         margin-bottom: 10px;   
     }
-
-}
-
-.tit1{
-    text-align: center;
-    color: black;
-    margin-bottom: 50px;
-    font-weight: bold;
 }
 
 .testimonios h4{
